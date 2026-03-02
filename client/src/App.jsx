@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Mail, Sparkles, Send, CheckCircle, AlertCircle, RefreshCcw, LogIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const API_BASE = 'http://localhost:5001/api/campaign';
-const AUTH_BASE = 'http://localhost:5001/api/auth';
+const API_BASE = '/api/campaign';
+const AUTH_BASE = '/api/auth';
 
 const App = () => {
   const [message, setMessage] = useState('');
