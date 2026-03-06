@@ -18,10 +18,10 @@ client/node_modules/
 Run these commands in your project root:
 1. `git init`
 2. `git add .`
-3. `git commit -m "Initial release: Kiran AI Mail Agent v1.0"`
+3. `git commit -m "Initial release: Tomar AI Mail Agent v1.0"`
 4. `git branch -M main`
 5. Create a new repository on GitHub.
-6. `git remote add origin https://github.com/YOUR_USERNAME/kiran-ai-mail.git`
+6. `git remote add origin https://github.com/YOUR_USERNAME/tomar-ai-mail.git`
 7. `git push -u origin main`
 
 ## 2. Business Packaging Tips

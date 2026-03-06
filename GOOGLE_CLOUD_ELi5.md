@@ -8,7 +8,7 @@ Google wants to know: "Who is this app, and what is it allowed to do?"
 1. **Step**: Choose **External**. 
    - *Why?* This means anyone with a Google account (like your clients) could eventually use it.
 2. **Step**: App Name, Support Email, and Developer Email.
-   - *Tip*: Just use `Kiran AI Mail` and your personal Gmail for both email spots.
+   - *Tip*: Just use `Tomar AI Mail` and your personal Gmail for both email spots.
 4. **Step: The Scopes (The Permissions)** 🔑
    - Click "Add or Remove Scopes".
    - You need to find and check these TWO:

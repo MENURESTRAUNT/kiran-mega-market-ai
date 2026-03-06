@@ -17,7 +17,7 @@ router.get('/callback', async (req, res) => {
         // In a real prod app, you'd use cookies or a secure session
         // For this demo, we can pass them in the URL and the frontend will save to localStorage
         const tokenString = encodeURIComponent(JSON.stringify(tokens));
-        res.redirect(`http://localhost:5173?tokens=${tokenString}`);
+        res.redirect(`/?tokens=${tokenString}`);
     } catch (error) {
         console.error('[AUTH ERROR]', error);
         res.status(500).send('Authentication failed.');

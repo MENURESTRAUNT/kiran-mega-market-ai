@@ -1,10 +1,10 @@
 # 🚀 Step-by-Step Setup Guide (Deployment)
 
-Follow these steps exactly to get your **Kiran AI Mail Agent** live and ready to show to businesses.
+Follow these steps exactly to get your **Tomar AI Mail Agent** live and ready to show to businesses.
 
 ## Step 1: Google Cloud Console (The "Brain")
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. **Create Project**: Click the dropdown at the top > "New Project" > Name it `Kiran-AI-Mail`.
+2. **Create Project**: Click the dropdown at the top > "New Project" > Name it `Tomar-AI-Mail`.
 3. **Enable APIs**:
    - Go to "APIs & Services" > "Library".
    - Search and Enable: **Gmail API**.
@@ -12,7 +12,7 @@ Follow these steps exactly to get your **Kiran AI Mail Agent** live and ready to
 4. **OAuth Consent Screen**:
    - Go to "OAuth Consent Screen".
    - Select **External**.
-   - App Name: `Kiran AI Mail`.
+   - App Name: `Tomar AI Mail`.
    - User Support Email: Your email.
    - Developer Contact: Your email.
    - **Scopes**: Add `.../auth/gmail.send` and `.../auth/spreadsheets.readonly`.
@@ -32,7 +32,7 @@ Go to your project folder and open `.env`. Fill in these values:
 
 ## Step 3: Run the System
 1. **Start Backend**:
-   - In terminal: `cd /Users/atharvajoshi/[portforlio/kiran-mega-market`
+   - In terminal: `cd /Users/atharvajoshi/[portforlio/tomar-super-market`
    - Run: `node server/index.js` (Server should say running on 5000).
 2. **Start Frontend**:
    - Open a NEW terminal tab.

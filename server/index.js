@@ -18,6 +18,10 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // Routes
+app.use((req, res, next) => {
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+    next();
+});
 app.use('/api/campaign', campaignRoutes);
 app.use('/api/auth', authRoutes);
 app.get('/api/health', (req, res) => {
@@ -29,11 +33,14 @@ const distPath = path.join(__dirname, '../client/dist');
 app.use(express.static(distPath));
 
 // Fallback for SPA routing
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
     res.sendFile(path.join(distPath, 'index.html'));
 });
 
 // Start Server
-app.listen(PORT, () => {
-    console.log(`[SERVER] Kiran AI Mail Agent running on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`[SERVER] Tomar AI Mail Agent running on http://localhost:${PORT}`);
+    });
+}
+module.exports = app;

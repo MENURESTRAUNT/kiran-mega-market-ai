@@ -63,11 +63,11 @@ router.post('/preview', async (req, res) => {
             }
         });
     } catch (error) {
-        console.error('[PREVIEW ERROR]', error.message);
+        console.error('[PREVIEW ERROR] Full Error:', error);
         if (isAuthError(error)) {
             return res.status(401).json({ error: 'NOT_AUTHENTICATED', message: 'Google session expired. Please log in again.' });
         }
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message, stack: error.stack });
     }
 });
 

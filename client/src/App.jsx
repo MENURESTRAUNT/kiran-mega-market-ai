@@ -123,7 +123,7 @@ const App = () => {
             <Mail className="text-white w-8 h-8" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold font-heading">Kiran AI Mail</h1>
+            <h1 className="text-2xl font-bold font-heading">Tomar AI Mail</h1>
             <p className="text-slate-500 text-sm">Bulk Personalization Agent</p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-# 🤖 Kiran AI Bulk Email Personalization Agent
+# 🤖 Tomar AI Bulk Email Personalization Agent
 
 A production-ready, AI-powered bulk email automation tool designed for small businesses (initial focus: Supermarket Promotions). This agent leverages OpenAI to transform raw promotional ideas into high-conversion, personalized emails sent via the Gmail API.
 
@@ -75,4 +75,4 @@ npm run dev
 - Anti-spam rate limiting by default.
 
 ---
-Built as a production-grade startup project for **Kiran Mega Market**.
+Built as a production-grade startup project for **Tomar Super Market**.

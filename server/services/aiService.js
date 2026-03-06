@@ -24,12 +24,12 @@ const enhanceLocally = (rawMessage) => {
     } else if (lower.includes('weekend') || lower.includes('today') || lower.includes('tomor')) {
         subject = `⏰ Limited Time — This Weekend Only!`;
     } else {
-        subject = `🌟 A Special Message from Kiran Mega Market`;
+        subject = `🌟 A Special Message from Tomar Super Market`;
     }
 
     // Generate professional body
     const greeting = `Hi {Name},`;
-    const closing = `\nWarm regards,\nKiran Mega Market Team`;
+    const closing = `\nWarm regards,\nTomar Super Market Team`;
 
     let body;
     if (discount) {
